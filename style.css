@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: Calibri;
 }
-h3{
+h2, p{
     color: white;
-    font-size: 18px;
+    /* font-size: 18px; */
+}
+p{
+    
 }
 input, button{
     width: 150px;
@@ -31,10 +34,17 @@ button:hover{
     margin-top: 20px;
     padding: 20px;
 }
-.max-number{
-    background-color: #f94144;
+.style{
     border: none;
     border-radius: 10px;
     padding: 20px;
-    line-height: 35px;
+    line-height: 30px;
+    margin: 25px;
+
+}
+.max-number-bt-2{
+    background-color: #f94144;
+}
+.max-number-bt-3{
+    background-color: #f3722c;
 }
