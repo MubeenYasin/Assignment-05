@@ -77,3 +77,85 @@ form02.addEventListener("submit", (e: Event) => {
     var max3 = maxNumberBT3(num01_2.valueAsNumber, num02_2.valueAsNumber, num03_2.valueAsNumber)
     console.log(max3)
 })
+
+/* ---------------------------------------------*/
+/* program to check whether a number is negative, positive or zero.*/
+/* ---------------------------------------------*/
+
+var problem03 = document.querySelector('#problem03')! as HTMLFormElement
+var numPoN = document.querySelector("#PoN")! as HTMLInputElement
+
+function postiveNumber(a:number) {
+    if (a > 0) {
+        return (
+            console.log('The Number is POSITIVE')
+        )
+    }
+    else if (a < 0) {
+        return (
+            console.log('The Number is NEGITIVE')
+        )
+    }
+    else {
+        return (
+            console.log('The Number is 0')
+        )
+    }
+}
+problem03.addEventListener("submit", (e: Event) => {
+    e.preventDefault()
+    /* Print the output in cosole */
+    var pos = postiveNumber(numPoN.valueAsNumber)
+    console.log(pos)
+})
+
+/* ---------------------------------------------*/
+/* 4. Write a ts program to check whether a number is divisible by 5 and 11 or not.*/
+/* ---------------------------------------------*/
+
+var problem04 = document.querySelector('#problem04')! as HTMLFormElement
+var divideTo = document.querySelector('#divideTo')! as HTMLInputElement
+var divideBy = document.querySelector('#divideBy')! as HTMLInputElement
+
+function divisible(x:number, y:number){
+    if(x % y == 0){
+        return(
+            console.log('The Number is Divisible')
+        )
+    }
+    else{
+        console.log('The Number is not Divisible')
+    }
+}
+
+problem04.addEventListener("submit", (e:Event) => {
+    e.preventDefault()
+    console.log(
+        divisible(divideTo.valueAsNumber, divideBy.valueAsNumber)
+    )
+})
+
+/* ---------------------------------------------*/
+/* 6. Write a ts program to check whether a year is leap year or not. */
+/* ---------------------------------------------*/
+
+var problem06 = document.querySelector('#problem06')! as HTMLFormElement
+var year = document.querySelector('#year')! as HTMLInputElement
+
+function leapYear(x:number){
+    if(x % 4 == 0){
+        return(
+            console.log(`The Year ${x} is Leap Year` )
+            )
+        }
+        else{
+        console.log(`The Year ${x} is not Leap Year` )
+    }
+}
+problem06.addEventListener("submit", (e:Event) => {
+    e.preventDefault()
+    console.log(
+        leapYear(year.valueAsNumber)
+    )
+})
+

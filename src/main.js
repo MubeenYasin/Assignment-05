@@ -66,3 +66,60 @@ form02.addEventListener("submit", function (e) {
     var max3 = maxNumberBT3(num01_2.valueAsNumber, num02_2.valueAsNumber, num03_2.valueAsNumber);
     console.log(max3);
 });
+/* ---------------------------------------------*/
+/* program to check whether a number is negative, positive or zero.*/
+/* ---------------------------------------------*/
+var problem03 = document.querySelector('#problem03');
+var numPoN = document.querySelector("#PoN");
+function postiveNumber(a) {
+    if (a > 0) {
+        return (console.log('The Number is POSITIVE'));
+    }
+    else if (a < 0) {
+        return (console.log('The Number is NEGITIVE'));
+    }
+    else {
+        return (console.log('The Number is 0'));
+    }
+}
+problem03.addEventListener("submit", function (e) {
+    e.preventDefault();
+    /* Print the output in cosole */
+    var pos = postiveNumber(numPoN.valueAsNumber);
+    console.log(pos);
+});
+/* ---------------------------------------------*/
+/* 4. Write a ts program to check whether a number is divisible by 5 and 11 or not.*/
+/* ---------------------------------------------*/
+var problem04 = document.querySelector('#problem04');
+var divideTo = document.querySelector('#divideTo');
+var divideBy = document.querySelector('#divideBy');
+function divisible(x, y) {
+    if (x % y == 0) {
+        return (console.log('The Number is Divisible'));
+    }
+    else {
+        console.log('The Number is not Divisible');
+    }
+}
+problem04.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log(divisible(divideTo.valueAsNumber, divideBy.valueAsNumber));
+});
+/* ---------------------------------------------*/
+/* 6. Write a ts program to check whether a year is leap year or not. */
+/* ---------------------------------------------*/
+var problem06 = document.querySelector('#problem06');
+var year = document.querySelector('#year');
+function leapYear(x) {
+    if (x % 4 == 0) {
+        return (console.log("The Year ".concat(x, " is Leap Year")));
+    }
+    else {
+        console.log("The Year ".concat(x, " is not Leap Year"));
+    }
+}
+problem06.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log(leapYear(year.valueAsNumber));
+});
