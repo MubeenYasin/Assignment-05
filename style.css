@@ -1,3 +1,40 @@
-body{
-    background-color: silver;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+h3{
+    color: white;
+    font-size: 18px;
+}
+input, button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+}
+button{
+    text-align: center;
+    color: #9c0507;
+}
+button:hover{
+    color: #f94144;
+    font-weight: 900;
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+.max-number{
+    background-color: #f94144;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 35px;
 }
