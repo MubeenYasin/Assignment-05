@@ -29,8 +29,9 @@ Basic Salary <= 10000 : HRA = 20%, DA = 80%
 Basic Salary <= 20000 : HRA = 25%, DA = 90%
 Basic Salary > 20000 : HRA = 30%, DA = 95%
 21. Write a ts program to input electricity unit charges and calculate total electricity bill according to the given condition:
-For first 50 units Rs. 0.50/unit
-For next 100 units Rs. 0.75/unit
-For next 100 units Rs. 1.20/unit
-For unit above 250 Rs. 1.50/unit
+For first 50 units Rs. 8/unit
+For next 100 units Rs. 10/unit
+For next 100 units Rs. 12/unit
+For unit above 250 Rs. 20/unit
 An additional surcharge of 20% is added to the bill
+

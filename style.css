@@ -11,7 +11,7 @@ h2, p{
 p{
     
 }
-input, button{
+input, button, .btn{
     width: 150px;
     height: 30px;
     border: none;
